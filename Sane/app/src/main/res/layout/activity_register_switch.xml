@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Activities.RegisterSwitchActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/ButtonRegisterAsAUser"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffbb00"
+        android:text="Register as a user"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/ButtonRegisterAsATherapist"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffbb00"
+        android:text="Register as a therapist"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextViewBackToLogin"
+        android:textColor="#02b0c4"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text = "Back to login"
+        android:layout_width="230dp"/>
+</LinearLayout>

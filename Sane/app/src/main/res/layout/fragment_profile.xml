@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/UserImageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/TextViewUsername"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/TextViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="25dp"
+        android:text="Email"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/TextViewDoB"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/TextViewVerifiedText"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/TextViewVerifiedValue"
+        android:layout_width="match_parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="305dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/TextViewBio"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+</RelativeLayout>

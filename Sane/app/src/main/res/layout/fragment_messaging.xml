@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp" >
+
+    <ImageView
+        android:id="@+id/UserImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/MessagingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/EditTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/ImageViewSend"
+            android:hint="Message"
+            android:maxLines="3" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ImageViewSend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/EditTextMessage"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_send" />
+    </RelativeLayout>
+</RelativeLayout>

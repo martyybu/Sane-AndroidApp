@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Activities.RegisterActivityTherapist">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Therapist Register Form"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="#3e3b3b" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow android:layout_marginTop="30dp" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#3e3b3b" />
+
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="#e9e0e0"
+                android:maxLength="20"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#897" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Surname"
+            android:layout_marginLeft="10dp"
+            android:textColor="#3e3b3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextSurname"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:background="#e9e0e0"
+        android:hint="Surname"
+        android:textColorHint="#897"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Email Address"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#3e3b3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextEmailAddress"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:background="#e9e0e0"
+        android:hint="Email Address"
+        android:textColorHint="#897"/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Date of Birth"
+        android:textColor="#3e3b3b"
+        android:width="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextDateOfBirth"
+        android:layout_height="40dp"
+        android:background="#e9e0e0"
+        android:layout_marginRight="60dp"
+        android:focusable="false"
+        android:hint="Touch to select..."/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Discipline"
+        android:textColor="#3e3b3b"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextDiscipline"
+        android:layout_height="40dp"
+        android:background="#e9e0e0"
+        android:maxLength="30"
+        android:hint="(Optional)"
+        android:textColorHint="#897"/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Phone Number"
+        android:textColor="#3e3b3b"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextPhoneNumber"
+        android:layout_height="40dp"
+        android:background="#e9e0e0"
+        android:layout_marginRight="60dp"
+        android:maxLength="11"
+        android:inputType="number"
+        android:hint="Phone number (07..)"
+        android:textColorHint="#897"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Username"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3e3b3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextUsername"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:background="#e9e0e0"
+        android:maxLength="20"
+        android:hint="Username"
+        android:textColorHint="#897"/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Password"
+        android:textColor="#3e3b3b"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EditTextPassword"
+        android:layout_height="40dp"
+        android:background="#e9e0e0"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#897"/>
+        </TableRow>
+    <Button
+        android:id="@+id/ButtonSignUp"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="40dp"
+        android:background="#ffbb00"
+        android:text="Register"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextViewBackToLogin"
+        android:textColor="#02b0c4"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_height="30dp"
+        android:text = "Back to login"
+        android:layout_width="220dp"/>
+    </TableLayout>
+
+</RelativeLayout>
