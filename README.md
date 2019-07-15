@@ -24,4 +24,6 @@ Run this command in the application directory to run the test suite
 
 	php composer.phar test
 
-That's it! Now go build something cool.
+
+
+This program was designed for mental health purposes, using Java and PHP for the DB connection. If you have any questions, feel free to ask!
